@@ -91,9 +91,9 @@ const ServiceDetail = () => {
                   <Link to={ROUTES.APPOINTMENT} className="btn btn-primary btn-lg">
                     Book Appointment
                   </Link>
-                  <a href={ROUTES.CONTACT} className="btn btn-outline btn-lg">
+                  <Link to={ROUTES.CONTACT} className="btn btn-outline btn-lg">
                     Ask a Question
-                  </a>
+                  </Link>
                 </div>
               </div>
 

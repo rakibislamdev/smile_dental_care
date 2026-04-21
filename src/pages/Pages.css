@@ -136,6 +136,233 @@
   opacity: 0.95;
 }
 
+/* Service Detail */
+.service-detail-page {
+  width: 100%;
+}
+
+.breadcrumb {
+  padding: 1rem 0;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.breadcrumb .container {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #0ea5e9;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.breadcrumb-item:hover {
+  color: #0284c7;
+}
+
+.breadcrumb-current {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.breadcrumb-separator {
+  color: #9ca3af;
+}
+
+.detail-content {
+  background: white;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.detail-header {
+  margin-bottom: 2rem;
+}
+
+.service-icon-large {
+  display: inline-flex;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(20, 184, 166, 0.12));
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.detail-title {
+  font-size: 2.6rem;
+  color: #111827;
+  margin: 0 0 0.5rem;
+}
+
+.detail-price {
+  display: inline-flex;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #0ea5e9;
+  font-weight: 700;
+  margin: 0;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.8fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.detail-main h2,
+.detail-main h3 {
+  color: #111827;
+  margin-top: 0;
+}
+
+.detail-main h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.75rem;
+}
+
+.detail-main h3 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.detail-main p {
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.detail-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #374151;
+}
+
+.detail-list li {
+  margin-bottom: 0.7rem;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.detail-sidebar {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 1.5rem;
+}
+
+.info-card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.info-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.label {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.value {
+  color: #111827;
+  font-weight: 600;
+  text-align: right;
+}
+
+.service-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-card-small {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 1.5rem;
+  height: 100%;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.service-card-link:hover .service-card-small {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(14, 165, 233, 0.12);
+  border-color: rgba(14, 165, 233, 0.25);
+}
+
+.service-icon-small {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(20, 184, 166, 0.12));
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-card-small h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.service-card-small p {
+  margin: 0;
+  color: #0ea5e9;
+  font-weight: 700;
+}
+
+.not-found {
+  background: white;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  max-width: 560px;
+}
+
 /* Background light */
 .bg-light {
   background-color: #f9fafb;
@@ -210,5 +437,36 @@
   .py-4 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .detail-content {
+    padding: 1.25rem;
+    border-radius: 18px;
+  }
+
+  .detail-title {
+    font-size: 2rem;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .info-item {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .value {
+    text-align: left;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
   }
 }
