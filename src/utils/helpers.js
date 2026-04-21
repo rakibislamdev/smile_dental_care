@@ -108,8 +108,9 @@ export const truncateText = (text, length = 100) => {
  * Generate WhatsApp link
  */
 export const generateWhatsAppLink = (phone, message = '') => {
+  const normalizedPhone = String(phone).replace(/\D/g, '');
   const encodedMessage = encodeURIComponent(message);
-  return `https://wa.me/${phone}?text=${encodedMessage}`;
+  return `https://wa.me/${normalizedPhone}?text=${encodedMessage}`;
 };
 
 /**

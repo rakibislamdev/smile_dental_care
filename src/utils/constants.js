@@ -186,7 +186,7 @@ export const CLINIC_INFO = {
   phone: '+1 (555) 123-4567',
   email: 'info@smiledentalclinic.com',
   address: '123 Dental Street, Medical Plaza, City 12345',
-  whatsapp: '+1 (555) 123-4567',
+  whatsapp: '+8801585924652',
   hours: {
     weekday: '9:00 AM - 6:00 PM',
     saturday: '10:00 AM - 4:00 PM',
