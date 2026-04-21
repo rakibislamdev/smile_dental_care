@@ -12,7 +12,8 @@ import './Contact.css';
 
 const Contact = () => {
   const dispatch = useDispatch();
-  const mapLocation = 'The White House, Washington, DC 20500, United States';
+  const whiteHouseLatitude = 38.8977;
+  const whiteHouseLongitude = -77.0365;
   const { register, handleSubmit, reset, formState: { errors } } = useForm({
     mode: 'onChange',
     defaultValues: {
@@ -204,10 +205,9 @@ const Contact = () => {
           <div className="map-container">
             <iframe
               title="Smile Dental Clinic Location"
-              src={`https://www.google.com/maps?q=${encodeURIComponent(mapLocation)}&output=embed`}
+              src={`https://www.openstreetmap.org/export/embed.html?bbox=${whiteHouseLongitude - 0.02}%2C${whiteHouseLatitude - 0.02}%2C${whiteHouseLongitude + 0.02}%2C${whiteHouseLatitude + 0.02}&layer=mapnik&marker=${whiteHouseLatitude}%2C${whiteHouseLongitude}`}
               className="map-frame"
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
             />
           </div>

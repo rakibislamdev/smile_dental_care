@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 import { addAppointment, setError, clearError } from '../redux/slices/appointmentSlice';
-import { selectContactSuccess } from '../redux/selectors';
 import { generateId, validateEmail, validatePhone } from '../utils/helpers';
-import { ROUTES, SERVICES_DATA, DOCTORS_DATA } from '../utils/constants';
+import { SERVICES_DATA, DOCTORS_DATA } from '../utils/constants';
 import HeroSection from '../components/HeroSection';
 import './Pages.css';
 import './Appointment.css';
@@ -58,9 +57,6 @@ const Appointment = () => {
     // Show success message
     alert('Appointment booked successfully! We will contact you soon.');
   };
-
-  const selectedService = watch('service');
-  const selectedDoctor = watch('doctor');
 
   return (
     <div className="appointment-page">
