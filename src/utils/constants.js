@@ -104,13 +104,13 @@ export const SERVICES_DATA = [
 
 export const IMAGES = {
   clinicInterior:
-    'https://images.unsplash.com/photo-1629909615184-74f495f0a8d1?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
   clinicLocation:
     'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=1200&q=80',
   doctorJohn:
     'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80',
   doctorSarah:
-    'https://images.unsplash.com/photo-1594824475270-5e5f6d6c9d3c?auto=format&fit=crop&w=600&q=80',
+    'https://plus.unsplash.com/premium_photo-1661580574627-9211124e5c3f?auto=format&fit=crop&w=600&q=80',
   doctorMichael:
     'https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=600&q=80',
   patientEmma:
