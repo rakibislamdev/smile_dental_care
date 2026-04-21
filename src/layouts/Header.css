@@ -27,14 +27,18 @@
   text-decoration: none;
   color: white;
   transition: transform 0.3s ease;
+  margin-right: 2rem;
 }
 
 .logo:hover {
   transform: scale(1.05);
 }
 
-.logo-icon {
-  font-size: 2rem;
+.logo-image {
+  width: 198px;
+  /* height: 42px; */
+  object-fit: contain;
+  display: block;
 }
 
 .logo-text {

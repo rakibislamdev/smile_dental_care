@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FiMenu, FiX, FiPhone } from 'react-icons/fi';
 import { ROUTES, CLINIC_INFO } from '../utils/constants';
 import './Header.css';
+import logo from '../assets/logo/smile_dental.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,8 +24,7 @@ const Header = () => {
       <div className="header-container">
         {/* Logo */}
         <Link to={ROUTES.HOME} className="logo">
-          <span className="logo-icon">🦷</span>
-          <span className="logo-text">Smile Dental</span>
+          <img src={logo} alt="Smile Dental Clinic" className="logo-image" />
         </Link>
 
         {/* Desktop Navigation */}
