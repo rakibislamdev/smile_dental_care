@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Smile Dental Clinic
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern dental clinic website built with Create React App, React, Redux, React Router, and Framer Motion. The app includes a polished landing page, services catalogue, doctor profiles, appointment booking, contact form, and reusable hero sections with rich visuals.
+
+## Features
+
+- Responsive homepage with hero banner, stats, featured services, doctors, and testimonials
+- Services listing with a dedicated service detail page
+- Doctor profiles with search and filtering
+- Appointment booking form with validation and Redux state updates
+- Contact form with success notifications
+- Global toast notifications for appointment and contact submissions
+- Sticky header, footer, and shared layout
+- Animated UI with Framer Motion and Swiper testimonials
+- Mobile-friendly design
+
+## Tech Stack
+
+- React 19
+- Create React App
+- Redux Toolkit
+- React Router DOM
+- React Hook Form
+- Framer Motion
+- Swiper
+- React Icons
+- Axios
+
+## Project Structure
+
+```text
+src/
+	components/     Reusable UI pieces such as HeroSection, cards, spinner, notification
+	layouts/        Header, Footer, and the shared page layout
+	pages/          Home, About, Services, ServiceDetail, Doctors, Appointment, Contact, NotFound
+	redux/          Store, slices, and selectors
+	routes/         Route definitions
+	utils/          Shared constants, helpers, and API client
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or newer
+- npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run the app locally
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Run tests
+
+```bash
+npm test
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start` - starts the development server
+- `npm run build` - creates an optimized production build
+- `npm test` - runs the test runner in watch mode
+- `npm run eject` - ejects from Create React App configuration
 
-### `npm start`
+## Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Home
+- About
+- Services
+- Service Detail
+- Doctors
+- Appointment
+- Contact
+- Not Found
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Notes
 
-### `npm test`
+- The project currently uses mocked content for services, doctors, and testimonials.
+- Appointment and contact submissions are stored in Redux state and show a custom in-app notification.
+- Hero banners are shared through a reusable component so page visuals stay consistent.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployment
 
-### `npm run build`
+This project can be deployed to platforms such as Vercel or Netlify after running the production build.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## License
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+No license has been specified yet.
