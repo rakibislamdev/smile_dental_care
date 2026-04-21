@@ -119,6 +119,18 @@ export const IMAGES = {
     'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80',
   patientLisa:
     'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=160&q=80',
+  heroBackground:
+    'https://plus.unsplash.com/premium_photo-1661286687299-721cfff5b3c7?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  heroAboutBackground:
+    'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
+  heroServiceBackground:
+    'https://images.unsplash.com/photo-1593022356769-11f762e25ed9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  heroDoctorBackground:
+    'https://plus.unsplash.com/premium_photo-1681967049326-0a340b5281ab?q=80&w=1149&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  heroAppointmentBackground:
+    'https://images.unsplash.com/photo-1588776814546-ec7a5e4a21c0?auto=format&fit=crop&w=1200&q=80',
+  heroContactBackground:
+    'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80',
 };
 
 // Doctors Data (Mock)

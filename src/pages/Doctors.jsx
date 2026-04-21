@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from '../components/HeroSection';
 import DoctorCard from '../components/DoctorCard';
-import { DOCTORS_DATA, ROUTES } from '../utils/constants';
+import { DOCTORS_DATA, IMAGES, ROUTES } from '../utils/constants';
 import './Pages.css';
 
 const Doctors = () => {
@@ -26,6 +26,8 @@ const Doctors = () => {
       <HeroSection
         title="Meet Our Dental Experts"
         subtitle="Highly qualified and experienced dentists dedicated to your care"
+        backgroundImage={IMAGES.heroDoctorBackground}
+        eyebrow="Your care team"
       />
 
       <section className="section py-4">

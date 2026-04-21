@@ -6,7 +6,7 @@ import { FiPhone, FiMail, FiMapPin, FiClock } from 'react-icons/fi';
 import { addMessage, setError } from '../redux/slices/contactSlice';
 import { showNotification } from '../redux/slices/uiSlice';
 import { validateEmail, validatePhone, generateId } from '../utils/helpers';
-import { CLINIC_INFO } from '../utils/constants';
+import { CLINIC_INFO, IMAGES } from '../utils/constants';
 import HeroSection from '../components/HeroSection';
 import './Pages.css';
 import './Contact.css';
@@ -65,6 +65,8 @@ const Contact = () => {
       <HeroSection
         title="Get In Touch"
         subtitle="Have questions? We'd love to hear from you"
+        backgroundImage={IMAGES.heroContactBackground}
+        eyebrow="Let’s talk"
       />
 
       <section className="section py-4">

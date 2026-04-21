@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import ServiceCard from '../components/ServiceCard';
-import { ROUTES, SERVICES_DATA } from '../utils/constants';
+import { IMAGES, ROUTES, SERVICES_DATA } from '../utils/constants';
 import './Pages.css';
 
 const Services = () => {
@@ -16,6 +16,10 @@ const Services = () => {
       <HeroSection
         title="Our Dental Services"
         subtitle="Comprehensive dental care for the whole family"
+        cta="Book Appointment"
+        ctaLink={ROUTES.APPOINTMENT}
+        backgroundImage={IMAGES.heroServiceBackground}
+        eyebrow="What we do best"
       />
 
       <section className="section py-4">

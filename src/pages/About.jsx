@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FiCheckCircle, FiUsers, FiAward, FiTrendingUp } from 'react-icons/fi';
 import HeroSection from '../components/HeroSection';
-import { ROUTES } from '../utils/constants';
+import { IMAGES, ROUTES } from '../utils/constants';
 import './Pages.css';
 
 const About = () => {
@@ -58,6 +58,8 @@ const About = () => {
       <HeroSection
         title="About Smile Dental Clinic"
         subtitle="Committed to providing exceptional dental care since 2004"
+        backgroundImage={IMAGES.heroAboutBackground}
+        eyebrow="Our story"
       />
 
       {/* Our Story */}

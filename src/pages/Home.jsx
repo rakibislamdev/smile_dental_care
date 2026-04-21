@@ -49,6 +49,8 @@ const Home = () => {
         subtitle="Experience professional dental care with the latest technology and compassionate team"
         cta="Book Appointment"
         ctaLink={ROUTES.APPOINTMENT}
+        backgroundImage={IMAGES.heroBackground}
+        eyebrow="Trusted dental care"
       />
 
       {/* Stats Section */}

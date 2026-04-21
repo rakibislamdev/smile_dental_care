@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { addAppointment, setError, clearError } from '../redux/slices/appointmentSlice';
 import { showNotification } from '../redux/slices/uiSlice';
 import { generateId, validateEmail, validatePhone } from '../utils/helpers';
-import { SERVICES_DATA, DOCTORS_DATA } from '../utils/constants';
+import { SERVICES_DATA, DOCTORS_DATA, IMAGES } from '../utils/constants';
 import HeroSection from '../components/HeroSection';
 import './Pages.css';
 import './Appointment.css';
@@ -67,6 +67,8 @@ const Appointment = () => {
       <HeroSection
         title="Book Your Appointment"
         subtitle="Schedule a visit with our experienced dentists"
+        backgroundImage={IMAGES.heroAppointmentBackground}
+        eyebrow="Book in minutes"
       />
 
       <section className="section py-4">
