@@ -4,6 +4,7 @@ const initialState = {
   sidebarOpen: false,
   theme: 'light',
   notificationOpen: false,
+  notificationTitle: '',
   notificationMessage: '',
   notificationType: 'info', // 'info', 'success', 'error', 'warning'
 };
@@ -29,11 +30,13 @@ const uiSlice = createSlice({
     },
     showNotification(state, action) {
       state.notificationOpen = true;
+      state.notificationTitle = action.payload.title || '';
       state.notificationMessage = action.payload.message;
       state.notificationType = action.payload.type || 'info';
     },
     hideNotification(state) {
       state.notificationOpen = false;
+      state.notificationTitle = '';
       state.notificationMessage = '';
     },
   },

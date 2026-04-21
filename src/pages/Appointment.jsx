@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 import { addAppointment, setError, clearError } from '../redux/slices/appointmentSlice';
+import { showNotification } from '../redux/slices/uiSlice';
 import { generateId, validateEmail, validatePhone } from '../utils/helpers';
 import { SERVICES_DATA, DOCTORS_DATA } from '../utils/constants';
 import HeroSection from '../components/HeroSection';
@@ -11,7 +12,7 @@ import './Appointment.css';
 
 const Appointment = () => {
   const dispatch = useDispatch();
-  const { register, handleSubmit, reset, formState: { errors }, watch } = useForm({
+  const { register, handleSubmit, reset, formState: { errors } } = useForm({
     mode: 'onChange',
     defaultValues: {
       date: '',
@@ -54,8 +55,11 @@ const Appointment = () => {
     dispatch(clearError());
     reset();
 
-    // Show success message
-    alert('Appointment booked successfully! We will contact you soon.');
+    dispatch(showNotification({
+      type: 'success',
+      title: 'Appointment booked',
+      message: 'Your appointment request has been submitted successfully. We will contact you soon.',
+    }));
   };
 
   return (

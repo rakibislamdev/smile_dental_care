@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 import { FiPhone, FiMail, FiMapPin, FiClock } from 'react-icons/fi';
 import { addMessage, setError } from '../redux/slices/contactSlice';
+import { showNotification } from '../redux/slices/uiSlice';
 import { validateEmail, validatePhone, generateId } from '../utils/helpers';
 import { CLINIC_INFO } from '../utils/constants';
 import HeroSection from '../components/HeroSection';
@@ -52,8 +53,11 @@ const Contact = () => {
     dispatch(addMessage(message));
     reset();
 
-    // Show success message
-    alert('Thank you for your message! We will get back to you soon.');
+    dispatch(showNotification({
+      type: 'success',
+      title: 'Message sent',
+      message: 'Thanks for reaching out. We have received your message and will get back to you soon.',
+    }));
   };
 
   return (

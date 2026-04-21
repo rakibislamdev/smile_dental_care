@@ -26,5 +26,6 @@ export const selectContactSuccess = (state) => state.contact.success;
 export const selectSidebarOpen = (state) => state.ui.sidebarOpen;
 export const selectTheme = (state) => state.ui.theme;
 export const selectNotificationOpen = (state) => state.ui.notificationOpen;
+export const selectNotificationTitle = (state) => state.ui.notificationTitle;
 export const selectNotificationMessage = (state) => state.ui.notificationMessage;
 export const selectNotificationType = (state) => state.ui.notificationType;
