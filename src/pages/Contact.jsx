@@ -5,13 +5,14 @@ import { motion } from 'framer-motion';
 import { FiPhone, FiMail, FiMapPin, FiClock } from 'react-icons/fi';
 import { addMessage, setError } from '../redux/slices/contactSlice';
 import { validateEmail, validatePhone, generateId } from '../utils/helpers';
-import { CLINIC_INFO, IMAGES } from '../utils/constants';
+import { CLINIC_INFO } from '../utils/constants';
 import HeroSection from '../components/HeroSection';
 import './Pages.css';
 import './Contact.css';
 
 const Contact = () => {
   const dispatch = useDispatch();
+  const mapLocation = 'The White House, Washington, DC 20500, United States';
   const { register, handleSubmit, reset, formState: { errors } } = useForm({
     mode: 'onChange',
     defaultValues: {
@@ -201,11 +202,13 @@ const Contact = () => {
         <div className="container">
           <h2 className="section-title text-center mb-4">Find Us On The Map</h2>
           <div className="map-container">
-            <img
-              src={IMAGES.clinicLocation}
-              alt="Clinic Location"
-              className="map-image"
+            <iframe
+              title="Smile Dental Clinic Location"
+              src={`https://www.google.com/maps?q=${encodeURIComponent(mapLocation)}&output=embed`}
+              className="map-frame"
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
             />
           </div>
         </div>
